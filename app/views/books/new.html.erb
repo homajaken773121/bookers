@@ -1,10 +1,10 @@
 <h1>Errors</h1>
 <!-- form_with部分 -->
 <% if @book.errors.any? %>
-  <%= @book.errors.count %>件のエラーが発生しました
+  <%= @book.errors.count %>errors occured.<br>
   <% @book.errors.full_messages.each do |message| %>
     <%= message %>
   <% end %>
-<% end %>
+<% end %><br>
 
 <%= link_to "Back", "/books" %>
